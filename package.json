@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "test": "npx cypress run",
+    "report:merge": "npx mochawesome-merge \"cypress/reports/mochawesome*.json\" > cypress/reports/test-reports.json",
+    "report:html": "npx marge cypress\\reports\\test-reports.json --reportDir cypress\\reports\\test-report --inline",
+    "report:open": "start \"\" \"cypress\\reports\\test-report\\test-reports.html\""
+  },
+  "dependencies": {
+    "cypress": "^15.12.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
