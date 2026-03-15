@@ -56,7 +56,7 @@ npm install
 1. Run All Test Case
 
 ```bash
-npm run cy:run
+npm run test
 ```
 
 ## Generate & Merge Report
