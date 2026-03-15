@@ -56,7 +56,7 @@ npm install
 1. Run All Test Case
 
 ```bash
-npm run cy:run
+npm run test
 ```
 
 ## Generate & Merge Report
@@ -80,14 +80,15 @@ npm run report:open
 ```
 
 ## Project Structure
-
+```bash
 project-root/
 ├─ cypress/
-│ ├─ e2e/ # Test files
-│ ├─ fixtures/ # Test data
-│ ├─ support/ # Cypress commands & configuration
-│ └─ reports/ # JSON & HTML reports
-├─ node_modules/
-├─ package.json
-├─ cypress.config.js
-└─ README.md
+│  ├─ e2e/         # Test files
+│  ├─ fixtures/    # Test data
+│  ├─ support/     # Cypress commands & configuration
+│  └─ reports/     # JSON & HTML reports
+├─ node_modules/   # Installed dependencies
+├─ package.json    # Project configuration and scripts
+├─ cypress.config.js  # Cypress configuration
+└─ README.md       # Project documentation
+```
